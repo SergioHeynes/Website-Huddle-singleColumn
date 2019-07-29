@@ -2,8 +2,13 @@
     text-align: center;
     padding-bottom: 26rem;
 
+    @include respond(phone) {
+        padding-bottom: 10rem;
+    }
+
     &__illustration {
         width: 100%;
         height: auto;
+
     }
 }

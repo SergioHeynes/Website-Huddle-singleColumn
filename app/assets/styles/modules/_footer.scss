@@ -1,0 +1,28 @@
+.footer {
+    padding: 4rem;
+    background-color: $color-darkCyan;
+    color: $color-white;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    
+    &__logo {
+        
+    }
+}
+
+.container__left {
+    flex-basis: 35%;
+    text-align: left;
+}
+
+.container__right {
+    flex-basis: 65%;
+    text-align: right;
+}
+
+.legal {
+    margin-top: 5rem;
+    font-size: 1.5rem;
+}

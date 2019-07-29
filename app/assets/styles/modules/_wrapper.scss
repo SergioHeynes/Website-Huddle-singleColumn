@@ -2,9 +2,18 @@
     padding-left: 8rem;
     padding-right: 8rem;
 
+    @include respond(tab-land) {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
 
     &--large {
         padding-left: 21rem;
         padding-right: 21rem;
+
+        @include respond(tab-land) {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
     }
 }

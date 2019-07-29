@@ -1,4 +1,18 @@
 .header {
     padding-top: 8.4rem;
     padding-bottom: 25rem;
+
+    @include respond(phone) {
+        padding-top: 4rem;
+        padding-bottom: 12rem;
+    }
+
+    &__logo {
+
+        @include respond(phone) {
+            width: 45%;
+            height: auto;
+        }
+        
+    }
 }
