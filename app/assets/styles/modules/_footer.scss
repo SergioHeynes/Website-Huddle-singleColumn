@@ -72,8 +72,10 @@
         height: auto;
 
         @include respond(tab-land) {
-            width: 80%;
+            width: auto;
         }
+
+
     }
 
     &__nav-primary {
@@ -92,13 +94,14 @@
 
     &__nav-primary-item {
         display: inline-block;
-        font-size: 1.1rem;
+        font-size: 2rem;
         
         &:not(:first-child) {
             margin-left: 4rem;
 
             @include respond(phone) {
                 margin-left: 0;
+                font-size: 1.1rem;
             }
         }
 
@@ -129,7 +132,11 @@
 
     &__nav-social-media-item {
         display: inline-block;
-        font-size: 3rem;
+        font-size: 3.7rem;
+
+        @include respond(phone) {
+            font-size: 3rem;
+        }
 
         &:not(:first-child) {
             margin-left: 1.4rem;
