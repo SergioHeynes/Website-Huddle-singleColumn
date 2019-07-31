@@ -551,7 +551,8 @@ body {
   color: #FFF;
   cursor: pointer;
   padding: 1.8rem 6.6rem;
-  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
+  margin-top: 2rem; }
   @media only screen and (max-width: 56.25em) {
     .btn, .btn:link, .btn:visited {
       display: block;
@@ -622,18 +623,20 @@ body {
     margin: 0;
     padding: 0;
     list-style: none; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 56.25em) {
       .footer__nav-primary-list {
         text-align: left; } }
   .footer__nav-primary-item {
     display: inline-block;
     font-size: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__nav-primary-item {
+        font-size: 1.1rem; } }
     .footer__nav-primary-item:not(:first-child) {
       margin-left: 4rem; }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 56.25em) {
         .footer__nav-primary-item:not(:first-child) {
-          margin-left: 0;
-          font-size: 1.1rem; } }
+          margin-left: 0; } }
     @media only screen and (max-width: 56.25em) {
       .footer__nav-primary-item {
         display: block; }
