@@ -74,12 +74,6 @@
         @include respond(tab-land) {
             width: auto;
         }
-
-
-    }
-
-    &__nav-primary {
-
     }
 
     &__nav-primary-list {
@@ -106,7 +100,6 @@
             @include respond(tab-port) {
                 margin-left: 0;
             }
-
         }
 
         @include respond(tab-port) {
@@ -116,16 +109,11 @@
                 margin-bottom: 1rem;
             }
         }
-
     }
 
     &__nav-primary-link {
         text-decoration: none;
         color: $color-white;
-    }
-
-    &__nav-social-media {
-
     }
 
     &__nav-social-media-list {
@@ -147,10 +135,6 @@
         }
     }
 
-    &__nav-social-media-link {
-
-    }  
-
     &__legal {
         font-size: 1.4rem;
 
@@ -158,5 +142,4 @@
             font-size: 1.1rem;
         }
     }
-
 }
