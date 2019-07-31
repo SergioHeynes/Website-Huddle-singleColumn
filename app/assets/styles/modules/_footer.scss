@@ -1,28 +1,121 @@
 .footer {
-    padding: 4rem;
     background-color: $color-darkCyan;
     color: $color-white;
-
-    display: flex;
-    align-items: stretch;
-    justify-content: space-around;
-    
-    &__logo {
-        
-    }
-}
-
-.container__left {
-    flex-basis: 35%;
-    text-align: left;
-}
-
-.container__right {
-    flex-basis: 65%;
+    padding: 4rem 8rem;
     text-align: right;
-}
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
+    align-content: space-between;
 
-.legal {
-    margin-top: 5rem;
-    font-size: 1.5rem;
+    @include respond(tab-port) {
+        padding: 4rem 4rem;
+        text-align: left;
+
+        flex-direction: column;  
+        align-content: flex-start;
+    }
+
+    &__logo-image {
+        flex: 0 0 20%;
+        align-self: center;
+
+        margin-right: 5%;
+
+        @include respond(tab-port) {
+            order: -2;
+
+            margin-bottom: 3.7rem;
+        }
+    }
+
+    &__nav-primary {
+        flex: 0 0 60%;
+        font-size: 1.6rem;
+        align-self: center;
+        justify-self: flex-end;
+
+        @include respond(tab-port) {
+            flex: 1;
+
+            align-self: flex-start;
+            margin: 0;
+            margin-bottom: 3.7rem;
+            order: 1;
+        }
+    }
+
+    &__nav-primary-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__nav-primary-item {
+        display: inline-block;
+        margin-left: 6rem;
+
+        @include respond(tab-port) {
+            display: block;
+            margin-top: 0;
+            margin-right: 0;
+            margin-left: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    &__nav-primary-link {
+        text-decoration: none;
+        color: currentColor;
+    }
+
+    &__nav-social-media {
+        flex: 0 0 20%;
+        font-size: 3.7rem;
+        margin-right: 5%;
+        align-self: center;
+
+        @include respond(tab-port) {
+            margin: 0;   
+            
+            order: -1;
+            align-self: flex-start;
+        }
+    }
+
+    &__nav-social-media-list {
+        list-style: none;
+        padding: 0;
+
+        @include respond(tab-port) {
+            margin-top: 0;
+        }
+    }
+
+    &__nav-social-media-item {
+        display: inline-block;
+        
+        &:not(:first-child) {
+            margin-left: 1rem;
+        }
+
+    }
+
+    &__nav-social-media-link {
+
+    }  
+
+    &__legal {
+        flex: 0 0 60%;
+        font-size: 1.3rem;
+
+        align-self: center;
+        order: 2;
+    }
+
 }
